@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HooPulse.Api/HooPulse.Api.csproj" />
+    <Project Path="src/HooPulse.Application/HooPulse.Application.csproj" />
+    <Project Path="src/HooPulse.Domain/HooPulse.Domain.csproj" />
+    <Project Path="src/HooPulse.Infrastructure/HooPulse.Infrastructure.csproj" />
+  </Folder>
+</Solution>
