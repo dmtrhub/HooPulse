@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg18
+    container_name: hoopulse-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: hoopulse
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: HooPulseDev2026!
+    ports:
+      - "5432:5432"
+    volumes:
+      - hoopulse-postgres-data:/var/lib/postgresql
+
+volumes:
+  hoopulse-postgres-data:
