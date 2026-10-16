@@ -1,11 +1,12 @@
+using HooPulse.Application;
 using HooPulse.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var config = builder.Configuration;
 
-builder.Services.AddInfrastructure(
-    config);
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(config);
 
 builder.Services.AddControllers();
 
